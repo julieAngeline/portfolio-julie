@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julie Razanamaharo | Portfolio</title>
-
     <style>
+        :root {
+            --primary: #667eea;
+            --secondary: #764ba2;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -16,125 +20,31 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            padding: 40px 20px;
+            line-height: 1.6;
         }
 
         .container {
-            max-width: 1100px;
-            margin: auto;
+            max-width: 1200px;
+            margin: 20px auto;
             background: white;
             border-radius: 25px;
             overflow: hidden;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
         }
 
-        /* HEADER */
-        .header {
-            position: relative;
-            overflow: hidden;
-            background: linear-gradient(135deg, #0f172a, #1e293b);
-            color: white;
-            padding: 90px 60px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 50px;
-            flex-wrap: wrap;
-        }
-
-        .header::before {
-            content: '';
-            position: absolute;
-            width: 350px;
-            height: 350px;
-            background: rgba(102,126,234,0.35);
-            border-radius: 50%;
-            top: -100px;
-            right: -80px;
-            filter: blur(80px);
-        }
-
-        .header-text {
-            flex: 1;
-            z-index: 2;
-        }
-
-        .header-text h1 {
-            font-size: 58px;
-            margin-bottom: 18px;
-            line-height: 1.2;
-        }
-
-        .title {
-            font-size: 20px;
-            color: #cbd5e1;
-            margin-bottom: 12px;
-        }
-
-        .profile-img {
-            width: 240px;
-            height: 240px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 6px solid rgba(255,255,255,0.2);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.5);
-            transition: 0.5s;
-        }
-
-        .profile-img:hover {
-            transform: scale(1.05) rotate(2deg);
-        }
-
-        .buttons {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .btn {
-            padding: 10px 20px;
-            border-radius: 50px;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-        }
-
-        .btn-cv { background: #e74c3c; }
-        .btn-project { background: #25D366; }
-        .btn-contact { background: #3498db; }
-
-        /* Autres sections (j'ai gardé tes styles) */
-        section {
-            padding: 80px 40px;
-            min-height: 100vh;
-            scroll-margin-top: 80px;
-        }
-
-        section h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #2c3e50;
-            font-size: 42px;
-        }
-
+        /* NAVBAR */
         .navbar {
             position: sticky;
-            top: 20px;
+            top: 15px;
             width: fit-content;
             margin: 20px auto;
-            padding: 14px 28px;
-            display: flex;
-            gap: 18px;
-            background: rgba(255,255,255,0.12);
-            backdrop-filter: blur(14px);
+            padding: 12px 25px;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(15px);
             border: 1px solid rgba(255,255,255,0.2);
             border-radius: 50px;
+            display: flex;
+            gap: 15px;
             z-index: 1000;
         }
 
@@ -144,28 +54,147 @@
             font-weight: 600;
             padding: 10px 18px;
             border-radius: 30px;
-            transition: 0.4s;
+            transition: all 0.3s;
         }
 
         .navbar a:hover {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
             transform: translateY(-3px);
         }
 
+        /* HEADER */
+        .header {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            padding: 100px 60px 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+            flex-wrap: wrap;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: rgba(102, 126, 234, 0.3);
+            border-radius: 50%;
+            top: -150px;
+            right: -100px;
+            filter: blur(80px);
+        }
+
+        .header-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .header-text h1 {
+            font-size: 56px;
+            line-height: 1.1;
+            margin-bottom: 15px;
+        }
+
+        .title {
+            font-size: 21px;
+            color: #cbd5e1;
+            margin-bottom: 8px;
+        }
+
+        .profile-img {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 8px solid rgba(255,255,255,0.25);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+            transition: all 0.5s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.08) rotate(5deg);
+        }
+
+        .buttons {
+            margin-top: 25px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .btn-cv { background: #e74c3c; }
+        .btn-project { background: #25D366; }
+        .btn-contact { background: #3498db; }
+
+        /* SECTIONS */
+        section {
+            padding: 90px 60px;
+            scroll-margin-top: 80px;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 50px;
+            color: #2c3e50;
+        }
+
+        /* About */
+        #about {
+            background: white;
+            text-align: center;
+        }
+
+        #about p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 19px;
+            color: #555;
+        }
+
+        /* Autres sections à améliorer ensuite */
+        #skills, #experience, #projects, #formation, #contact {
+            background: #f8f9fa;
+        }
+
         /* Mobile */
-        @media(max-width: 768px) {
+        @media (max-width: 768px) {
             .header {
-                flex-direction: column;
+                padding: 80px 30px;
                 text-align: center;
+            }
+            .header-text h1 {
+                font-size: 42px;
+            }
+            .profile-img {
+                width: 200px;
+                height: 200px;
             }
             .navbar {
                 flex-wrap: wrap;
                 justify-content: center;
-                width: 95%;
+                padding: 10px;
             }
-            .profile-img {
-                width: 180px;
-                height: 180px;
+            section {
+                padding: 60px 20px;
             }
         }
     </style>
@@ -173,7 +202,6 @@
 <body>
 
     <nav class="navbar">
-        <a href="index.html">Accueil</a>
         <a href="#about">À propos</a>
         <a href="#skills">Compétences</a>
         <a href="#experience">Expérience</a>
@@ -185,35 +213,37 @@
     <div class="container">
 
         <!-- HEADER -->
-        <div class="header">
+        <header class="header">
             <div class="header-text">
                 <h1>RAZANAMAHARO Julie Solange</h1>
                 <p class="title">🎓 Master 2 Informatique Générale - ENI</p>
                 <p class="title">💻 Full Stack Developer</p>
-                <p class="title">Je construis des applications modernes.</p>
+                <p class="title">Je transforme des idées en applications modernes.</p>
                 <p>📍 Fianarantsoa, Madagascar</p>
 
                 <div class="buttons">
                     <a href="cv_texte.html" class="btn btn-cv" target="_blank">📄 Télécharger CV</a>
-                    <a href="#projects" class="btn btn-project">🚀 Mes projets</a>
-                    <a href="#contact" class="btn btn-contact">📞 Contact</a>
+                    <a href="#projects" class="btn btn-project">🚀 Voir mes projets</a>
+                    <a href="#contact" class="btn btn-contact">📞 Me contacter</a>
                 </div>
             </div>
 
-            <!-- IMAGE CORRIGÉE -->
-            <div class="header-image">
-                <img src="image.png" alt="Photo de Julie" class="profile-img">
+            <div>
+                <img src="image.png" alt="Photo de Julie Razanamaharo" class="profile-img">
             </div>
-        </div>
+        </header>
 
-        <!-- Le reste de tes sections reste identique -->
+        <!-- À PROPOS -->
         <section id="about">
             <h2>👩‍💻 À propos de moi</h2>
-            <p>Étudiante en Master 2 Informatique Générale à l’ENI, curieuse, rigoureuse et rapide à apprendre...</p>
+            <p>
+                Étudiante en Master 2 Informatique Générale à l’ENI, je suis passionnée par le développement Full Stack. 
+                Curieuse, rigoureuse et motivée, je cherche un stage de 6 mois à partir de juin 2026 pour mettre mes compétences 
+                au service d’une équipe dynamique et continuer à progresser en ingénierie logicielle.
+            </p>
         </section>
 
-        <!-- Tu peux remettre tes autres sections (skills, experience, projects, etc.) -->
-        <!-- Pour l'instant je les ai enlevées pour que ce soit plus clair, mais tu peux les remettre -->
+        <!-- Tu peux maintenant me dire quelle section tu veux qu’on améliore en priorité -->
 
     </div>
 
