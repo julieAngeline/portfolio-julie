@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julie Razanamaharo | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.8s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* =========================
+HEADER MODERNE
+========================= */
+
+.header{
+
+position: relative;
+
+overflow: hidden;
+
+background:
+linear-gradient(135deg,#0f172a,#1e293b);
+
+color: white;
+
+padding: 90px 60px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: space-between;
+
+gap: 50px;
+
+flex-wrap: wrap;
+}
+
+/* EFFET LUMIERE */
+
+.header::before{
+
+content:'';
+
+position:absolute;
+
+width:350px;
+height:350px;
+
+background:
+rgba(102,126,234,0.35);
+
+border-radius:50%;
+
+top:-100px;
+right:-80px;
+
+filter: blur(80px);
+}
+
+/* TEXTE */
+
+.header-text{
+
+flex:1;
+
+z-index:2;
+}
+
+.header-text h1{
+
+font-size:58px;
+
+margin-bottom:18px;
+
+line-height:1.2;
+}
+
+/* TITRES */
+
+.title{
+
+font-size:20px;
+
+color:#cbd5e1;
+
+margin-bottom:12px;
+
+line-height:1.7;
+}
+
+/* IMAGE */
+
+.header-image{
+
+position:relative;
+
+z-index:2;
+}
+
+/* PHOTO */
+
+.profile-img{
+
+width:240px;
+height:240px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:6px solid rgba(255,255,255,0.2);
+
+box-shadow:
+0 15px 40px rgba(0,0,0,0.5);
+
+transition:0.5s;
+}
+
+/* HOVER */
+
+.profile-img:hover{
+
+transform:
+scale(1.05) rotate(2deg);
+}
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            transition: 0.4s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        /* =========================
+   CONTACT SECTION
+========================= */
+
+#contact{
+    background: linear-gradient(135deg,#16243a,#1e2f4d);
+    padding: 80px 30px;
+    text-align: center;
+}
+
+/* TEXTE HAUT */
+
+.top-text{
+    color: white;
+    font-size: 30px;
+    line-height: 1.7;
+    margin-bottom: 60px;
+    font-weight: 300;
+}
+
+/* GRID */
+
+.contact-grid{
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap: 28px;
+}
+
+/* CARD */
+
+.contact-box{
+    background: #f5f5f5;
+
+    padding: 40px 25px;
+
+    border-radius: 28px;
+
+    text-decoration: none;
+
+    color: #111827;
+
+    transition: 0.4s;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* HOVER */
+
+.contact-box:hover{
+    transform: translateY(-10px);
+}
+
+/* WHATSAPP */
+
+.contact-box.whatsapp{
+    background: #18c08f;
+    color: white;
+}
+
+/* DARK CARD */
+
+.contact-box.dark{
+    background: #2c3e50;
+    color: white;
+}
+
+/* ICON */
+
+.contact-icon{
+
+    width: 70px;
+    height: 70px;
+
+    background: #dbeafe;
+
+    margin: auto;
+
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 34px;
+
+    margin-bottom: 25px;
+}
+
+/* TITRE */
+
+.contact-box h3{
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* TEXTE */
+
+.top-text{
+    color: white;
+    font-size: 30px;
+    line-height: 1.7;
+    margin-bottom: 60px;
+    font-weight: 300;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .top-text{
+        font-size: 20px;
+    }
+
+    .contact-box p{
+        font-size: 18px;
+    }
+
+}
+        /* BUTTONS */
+        .buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .btn-cv { background: #e74c3c; }
+        .btn-project { background: #25D366; }
+        .btn-contact { background: #3498db; }
+        .btn-github { background: #333; }
+
+        /* SECTIONS */
+        section {
+            padding: 60px 40px;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        /* =========================
+   SECTION ABOUT
+========================= */
+
+#about{
+
+/* espace intérieur :
+   70px = haut/bas
+   20px = gauche/droite */
+padding:70px 20px;
+
+/* fond blanc */
+background:white;
+
+/* centre le texte horizontalement */
+text-align:center;
+}
+
+/* TITRE */
+
+#about h2{
+
+font-size:42px;
+
+color:#2c3e50;
+
+margin-bottom:30px;
+}
+
+/* TEXTE */
+
+#about p{
+
+max-width:900px;
+
+margin:auto;
+
+font-size:20px;
+
+line-height:1.9;
+
+color:#555;
+}
+
+/* EFFET HOVER */
+
+#about p:hover{
+
+color:#2c3e50;
+
+transition:0.4s;
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+#about h2{
+
+    font-size:32px;
+}
+
+#about p{
+
+    font-size:17px;
+
+    line-height:1.7;
+}
+
+}
+
+/* =========================
+   SECTION COMPÉTENCES
+========================= */
+#skills {
+    padding: 60px 8%;
+    background: #0b0124;
+    color: white;
+}
+
+/* TITRE PRINCIPAL */
+#skills h2 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 50px;
+    color: white;
+    position: relative;
+}
+
+/* Ligne sous le titre */
+#skills h2::after {
+    content: "";
+    width: 90px;
+    height: 4px;
+    background: hsl(196, 92%, 5%);
+    display: block;
+    margin: 12px auto 0;
+    border-radius: 10px;
+}
+
+/* GRID PRINCIPAL */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* CARD */
+.skill-box {
+    background: hsl(219, 100%, 3%);
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(252, 252, 252, 0.3);
+    transition: 0.4s ease;
+}
+
+.skill-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px #02141a4d;
+}
+
+/* SOUS TITRES */
+.sub-title {
+    color: #010a0e;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+/* LISTE DES SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* CHAQUE SKILL */
+.skill {
+    background: rgb(1, 9, 24);
+    border: 2px solid #000c0f;
+    padding: 12px 22px;
+    border-radius: 50px;
+    font-size: 16px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+/* HOVER */
+.skill:hover {
+    background: hsl(195, 100%, 4%);
+    color: #031135;
+    transform: scale(1.08);
+}
+
+/* HOVER */
+
+.skill:hover{
+
+background:
+linear-gradient(135deg,#1436ce,hsl(270, 86%, 5%));
+
+color:white;
+
+transform:
+translateY(-8px) scale(1.03);
+
+border-color:white;
+
+box-shadow:
+0 15px 30px rgba(1, 7, 32, 0.4);
+}
+
+/* =========================
+PROJECTS SECTION
+========================= */
+
+.projects{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:28px;
+
+margin-top:40px;
+}
+
+/* PROJECT CARD */
+
+.project-card{
+
+background:white;
+
+padding:30px;
+
+border-radius:25px;
+
+transition:0.4s;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,0.1);
+
+position:relative;
+
+overflow:hidden;
+}
+
+/* TOP BORDER EFFECT */
+
+.project-card::before{
+
+content:'';
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:6px;
+
+background:
+linear-gradient(90deg,#667eea,#764ba2);
+}
+
+/* HOVER */
+
+.project-card:hover{
+
+transform:
+translateY(-10px);
+
+box-shadow:
+0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* TITRE */
+
+.project-card h3{
+
+margin-bottom:18px;
+
+font-size:26px;
+
+color:#2c3e50;
+}
+
+/* TEXTE */
+
+.project-card p{
+
+color:#555;
+
+line-height:1.8;
+
+font-size:17px;
+
+margin-bottom:12px;
+}
+
+/* STRONG */
+
+.project-card strong{
+
+color:#111827;
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.skill{
+
+    padding:18px;
+
+    font-size:16px;
+}
+
+.project-card{
+
+    padding:22px;
+}
+
+.project-card h3{
+
+    font-size:22px;
+}
+
+.project-card p{
+
+    font-size:15px;
+}
+
+}
+
+        /* PROJECTS */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .project-card h3 {
+            margin-bottom: 10px;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* MOBILE */
+        @media(max-width:768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .buttons {
+                justify-content: center;
+            }
+        }
+       /* =========================
+NAVBAR MODERNE
+========================= */
+
+.navbar{
+    position: sticky;
+    top: 20px;
+
+    width: fit-content;
+
+    margin: 20px auto;
+
+    padding: 14px 28px;
+
+    display: flex;
+    gap: 18px;
+
+    background: rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    border-radius: 50px;
+
+    z-index: 1000;
+
+    box-shadow:
+    0 8px 30px rgba(0,0,0,0.2);
+}
+
+/* LINKS */
+
+.navbar a{
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    padding: 10px 18px;
+
+    border-radius: 30px;
+
+    transition: 0.4s;
+}
+
+/* HOVER */
+
+.navbar a:hover{
+
+    background:
+    linear-gradient(135deg,#667eea,#764ba2);
+
+    transform: translateY(-3px);
+
+    box-shadow:
+    0 8px 20px rgba(102,126,234,0.4);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .navbar{
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        width: 95%;
+    }
+
+    .navbar a{
+
+        font-size: 14px;
+
+        padding: 8px 14px;
+    }
+}
+.sub-title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    font-size: 20px;
+}
+section {
+    padding: 80px 40px;
+    min-height: 100vh;   /* 👈 chaque section devient une page */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-margin-top: 80px;
+}
+section {
+    min-height: 100vh;
+}
+.project-card {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    line-height: 1.8;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card strong {
+    color: #2c3e50;
+}
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #667eea;
+    border-radius: 10px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 40px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -3px;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    background: #764ba2;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #667eea;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.timeline-content {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+}
+
+.timeline-content h3 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.timeline-content p {
+    color: #555;
+    line-height: 1.6;
+}
+.btn-gmail {
+    background: #ea4335;
+}
+
+.btn-gmail:hover {
+    background: #c5221f;
+}
+
+.contact-text {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.7;
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html">Accueil</a>
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#experience">Expérience</a>
+        <a href="#projects">Projets</a>
+        <a href="#formation">Formation</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+
+        <!-- TEXTE -->
+        <div class="header-text">
+
+            <h1>RAZANAMAHARO Julie Solange</h1>
+
+            <p class="title">🎓 Master 2 Informatique Générale - ENI</p>
+            <p class="title">💻 Full Stack Developer</p>
+            <p class="title">Je construis des applications modernes.</p>
+
+            <div class="contact">
+                <p>📍 Fianarantsoa, Madagascar</p>
+                
+            </div>
+
+        </div>
+
+        <!-- IMAGE -->
+        <div class="header-image">
+            <img src="image.PNG" alt="Photo Julie" class="profile-img">
+        </div>
+        <div class="buttons">
+
+            <a href="cv_texte.html"
+               class="btn btn-cv"
+               target="_blank">
+        
+               📄 Télécharger CV
+            </a>
+        
+            <a href="#projects"
+               class="btn btn-project">
+        
+               🚀 Mes projets
+            </a>
+        
+            <a href="#contact"
+               class="btn btn-contact">
+        
+               📞 Contact
+            </a>
+        
+        </div>
+
+    </div>
+    <section id="about" class="about">
+
+    <h2>👩‍💻 À propos de moi</h2>
+
+    <p>
+        Étudiante en Master 2 Informatique Générale à l’ENI,
+        curieuse, rigoureuse et rapide à apprendre,
+        je combine le développement Full Stack
+        avec les technologies modernes comme
+        React, Flask, Django et Flutter.
+
+        Aujourd’hui, je recherche un stage
+        de 6 mois afin de mettre mes compétences
+        au service d’une équipe et continuer
+        à évoluer en ingénierie logicielle.
+    </p>
+
+</section>
+<section id="skills">
+    <h2>Mes Compétences</h2>
+
+    <div class="skills-container">
+
+        <!-- FULL STACK -->
+        <div class="skill-box">
+            <h3 class="sub-title">💻 Full Stack</h3>
+
+            <div class="skills">
+                <div class="skill">HTML/CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">React</div>
+                <div class="skill">PHP</div>
+                <div class="skill">Node.js</div>
+                <div class="skill">Django</div>
+                <div class="skill">API REST</div>
+            </div>
+        </div>
+
+        <!-- BASE DE DONNÉES -->
+        <div class="skill-box">
+            <h3 class="sub-title">🗄️ Bases de données</h3>
+
+            <div class="skills">
+                <div class="skill">MySQL</div>
+                <div class="skill">MongoDB</div>
+                <div class="skill">PostgreSQL</div>
+            </div>
+        </div>
+
+        <!-- DEVOPS -->
+        <div class="skill-box">
+            <h3 class="sub-title">⚙️ DevOps</h3>
+
+            <div class="skills">
+                <div class="skill">Docker</div>
+                <div class="skill">Git / GitHub</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+    <section id="experience">
+        <h2>Expérience</h2>
+                <h2>💼 Expérience Professionnelle</h2>
+            
+                <div class="project-card">
+            
+                    <h3>
+                        Stagiaire Développeuse Full Stack — 2024
+                    </h3>
+            
+                    <p>
+                        <strong>Entreprise :</strong> Spray-Info Imandry Fianarantsoa
+                    </p>
+            
+                    <p>
+                        <strong>Thème :</strong>
+                        Conception et réalisation d’une application de gestion des apprenants.
+                    </p>
+            
+                    <p>
+                        <strong>Technologies utilisées :</strong>
+                        React.js, Node.js, Express.js, MySQL.
+                    </p>
+            
+                    <p>
+                        <strong>Méthodologie :</strong>
+                        2TUP & UML.
+                    </p>
+            
+                    <p>
+                        Développement d’une application web moderne permettant
+                        la gestion des apprenants avec architecture Front-end / Back-end.
+                    </p>
+            
+                </div>
+    </section>
+    <section id="projects">
+        <h2>Mes Projets</h2>
+        <img src="JULU.PNG" alt="">
+    </section>
+    <section id="formation">
+
+        <h2>🎓 Formation</h2>
+    
+        <div class="timeline">
+    
+            <div class="timeline-item">
+                <div class="timeline-date">2025 - 2026</div>
+    
+                <div class="timeline-content">
+                    <h3>Master 2 Informatique Générale</h3>
+                    <p>École Nationale d’Informatique (ENI)</p>
+                </div>
+            </div>
+    
+            <div class="timeline-item">
+                <div class="timeline-date">2024 - 2025</div>
+    
+                <div class="timeline-content">
+                    <h3>Master 1 Informatique Générale</h3>
+                    <p>École Nationale d’Informatique (ENI)</p>
+                </div>
+            </div>
+    
+            <div class="timeline-item">
+                <div class="timeline-date">2023 - 2024</div>
+    
+                <div class="timeline-content">
+                    <h3>Licence Professionnelle Informatique Générale</h3>
+                    <p>École Nationale d’Informatique (ENI)</p>
+                </div>
+            </div>
+    
+            <div class="timeline-item">
+                <div class="timeline-date">2020 - 2021</div>
+    
+                <div class="timeline-content">
+                    <h3>Baccalauréat Série D</h3>
+                    <p>
+                        Lycée RANDRIANASOLO Gervais Protais
+                        Ambohimahasoa
+                    </p>
+                </div>
+            </div>
+    
+        </div>
+    
+    </section>
+    <section id="contact">
+
+        <p class="top-text">
+            Je suis disponible pour un stage de 6 mois dès juin 2026.<br>
+            N'hésitez pas à me contacter pour échanger sur une opportunité.
+        </p>
+    
+        <div class="contact-grid">
+    
+            <!-- EMAIL -->
+            <div class="contact-box">
+    
+                <div class="contact-icon">
+                    ✉️
+                </div>
+    
+                <h3>Email</h3>
+    
+                <p>
+                    julierazanamaharo@gmail.com
+                </p>
+    
+            </div>
+    
+            <!-- WHATSAPP -->
+            <a href="https://wa.me/261343200423"
+               target="_blank"
+               class="contact-box whatsapp">
+    
+                <div class="contact-icon">
+                    💬
+                </div>
+    
+                <h3>WhatsApp</h3>
+    
+                <p>
+                    034 32 004 23
+                </p>
+    
+            </a>
+    
+            <!-- TELEPHONE -->
+            <a href="tel:+261343200423"
+               class="contact-box">
+    
+                <div class="contact-icon">
+                    📞
+                </div>
+    
+                <h3>Appeler</h3>
+    
+                <p>
+                    034 32 004 23
+                </p>
+    
+            </a>
+    
+            <!-- FACEBOOK -->
+            <a href="https://facebook.com/"
+               target="_blank"
+               class="contact-box">
+    
+                <div class="contact-icon">
+                    📘
+                </div>
+    
+                <h3>Facebook</h3>
+    
+                <p>
+                    Julie Razanamaharo
+                </p>
+    
+            </a>
+    
+            <!-- GITHUB -->
+            <a href="https://github.com/"
+               target="_blank"
+               class="contact-box">
+    
+                <div class="contact-icon">
+                    🌐
+                </div>
+    
+                <h3>GitHub</h3>
+    
+                <p>
+                    Julie Angeline
+                </p>
+    
+            </a>
+    
+            <!-- DISPONIBILITE -->
+            <div class="contact-box dark">
+    
+                <div class="contact-icon">
+                    🚀
+                </div>
+    
+                <h3>Disponibilité</h3>
+    
+                <p>
+                    Stage de 6 mois dès juin 2026
+                </p>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        © 2026 - RAZANAMAHARO Julie Solange
+    </div>
+
+</div>
+
+</body>
+</html>

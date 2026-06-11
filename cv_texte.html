@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAZANAMAHARO Julie Solange - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        .cv-grid {
+            display: grid;
+            grid-template-columns: 32% 68%;
+            max-width: 1100px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        /* ==================== COLONNE GAUCHE BLEUE ==================== */
+        .left {
+            background: linear-gradient(180deg, #4a4a4d, #444444);
+            color: white;
+            padding: 35px 25px;
+        }
+
+        .profile {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 25px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .left h2 {
+            font-size: 18px;
+            margin: 25px 0 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            padding-bottom: 6px;
+        }
+
+        .left p, .left li {
+            font-size: 14.5px;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        /* ==================== COLONNE DROITE ==================== */
+        .right {
+            padding: 40px 35px;
+        }
+
+        .right h1 {
+            font-size: 28px;
+            color: #1e3a8a;
+            margin-bottom: 4px;
+        }
+
+        .right .title {
+            font-size: 18px;
+            color: #2563eb;
+            margin-bottom: 25px;
+        }
+
+        .right h2 {
+            color: #1e3a8a;
+            font-size: 20px;
+            margin: 28px 0 15px;
+            border-left: 5px solid #2563eb;
+            padding-left: 12px;
+        }
+
+        .item {
+            margin-bottom: 22px;
+        }
+
+        .date {
+            color: #2563eb;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #e0e7ff;
+            color: #1e3a8a;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .profile-section {
+            font-style: italic;
+            color: #374151;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .cv-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-grid">
+
+    <!-- COLONNE GAUCHE -->
+    <div class="left">
+        <img src="image.png" alt="Julie Razanamaharo" class="profile">
+
+        <h2>COORDONNÉES</h2>
+        <p class="contact-item">📞 +261 34 32 00 423</p>
+        <p class="contact-item">✉️ julierazanamaharo@gmail.com</p>
+        <p class="contact-item">📍 Tanambao Fianarantsoa</p>
+
+        <h2>LANGUES</h2>
+        <p><strong>Malagasy :</strong> Natif</p>
+        <p><strong>Français :</strong> Niveau moyen</p>
+
+        <h2>COMPÉTENCES</h2>
+        <div class="skills">
+            <span class="skill">React.js</span>
+            <span class="skill">Next.js</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">Express.js</span>
+            <span class="skill">Laravel</span>
+            <span class="skill">Tailwind CSS</span>
+            <span class="skill">MySQL</span>
+            <span class="skill">PostgreSQL</span>
+            <span class="skill">Git / GitHub</span>
+            <span class="skill">Postman</span>
+        </div>
+
+        <h2>CENTRES D'INTÉRÊT</h2>
+        <p>Basket-ball | Football | Écouter de la musique</p>
+
+        <h2>PROFILS EN LIGNE</h2>
+        <p><strong>LinkedIn :</strong> Julie Solange</p>
+        <p><strong>GitHub :</strong> julieAngeline</p>
+        <p><strong>Facebook :</strong> Elysah Julie Razanamaharo</p>
+    </div>
+
+    <!-- COLONNE DROITE -->
+    <div class="right">
+        <h1>RAZANAMAHARO JULIE SOLANGE</h1>
+        <p class="title">Développeuse Full Stack (React.js, Node.js, Express.js)</p>
+
+        <h2>PROFIL</h2>
+        <p class="profile-section">
+            Étudiante en Master 2 Informatique à l'École Nationale d'Informatique (ENI), je suis spécialisée dans le développement Full Stack. 
+            Je maîtrise des technologies modernes telles que React.js, Next.js, Node.js, Express.js et Laravel.<br><br>
+            J'ai une expérience pratique acquise à travers plusieurs projets académiques et un stage en développement web et desktop. 
+            Je suis motivée et rigoureuse. Je cherche un stage de 5 mois afin de renforcer mes compétences en ingénierie logicielle.
+        </p>
+
+        <h2>DIPLÔMES</h2>
+        <div class="item">
+            <span class="date">2026</span><br>
+            <strong>Master 2 Professionnel</strong> — École Nationale d'Informatique (ENI)
+        </div>
+        <div class="item">
+            <span class="date">2025</span><br>
+            <strong>Master 1 Professionnel</strong> — École Nationale d'Informatique (ENI)
+        </div>
+        <div class="item">
+            <span class="date">2024</span><br>
+            <strong>Licence Professionnelle</strong> — École Nationale d'Informatique (ENI)
+        </div>
+        <div class="item">
+            <span class="date">2020</span><br>
+            Baccalauréat Série D — Lycée RANDRIANASOLO Gervais Protais
+        </div>
+
+        <h2>EXPÉRIENCE ET STAGES</h2>
+        <div class="item">
+            <span class="date">2025</span><br>
+            <strong>Stagiaire chez SISCO Ambohimahasoa</strong><br>
+            Édition et délivrance des extraits de liste du BEPC.
+        </div>
+        <div class="item">
+            <span class="date">2024</span><br>
+            <strong>Projet Gestion des Apprenants</strong> — Spray-Info Imandry Fianarantsoa<br>
+            Conception et réalisation d'une application web (React.js + Node.js + Express.js + MySQL).<br>
+            Méthodes : 2TUP et UML.
+        </div>
+        <div class="item">
+            <span class="date">2023</span><br>
+            <strong>Projet Mobile Money</strong> — Commune Urbaine de Fianarantsoa<br>
+            Conception et réalisation avec PHP et MySQL (Méthode MERISE).
+        </div>
+
+        <h2>RÉALISATIONS</h2>
+        <div class="item">
+            <span class="date">Avril 2025</span><br>
+            Application desktop RO (Recherche Opérationnelle) – Méthode Dantzig<br>
+            <em>Python + Tkinter</em>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
